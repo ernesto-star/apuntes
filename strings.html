@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <!--<link rel='stylesheet' type='text/css' media='screen' href='main.css'>-->
+    <script>
+        //**************TIPO STRING**************
+        //METODO charAt
+        console.log("METODO charAt");
+        console.log("Hola".charAt(0));
+        //METODO charCodeAt
+        console.log("METODO charCodeAt");
+        console.log("Hola".charCodeAt(0));
+        //METODO concat
+        console.log("METODO concat");
+        console.log("Hola".concat(" ", "mundo"));
+        //METODO endsWith
+        console.log("METODO endsWith");
+        console.log("Hola mundo".endsWith("do"));
+        //Método indexOf
+        console.log("METODO indexOf");
+        console.log("Hola mundo".indexOf("o", 0));
+        //Método lastIndexOf
+        console.log("METODO lastIndexOf");
+        console.log("Hola mundo".lastIndexOf("o"));
+        //Método match
+        console.log("METODO match");
+        console.log("Hola mundo".match(/ol/i));
+        //Método normalize
+        console.log("METODO normalize");
+        console.log("Ambigüedad inherente".normalize('NFD').replace(/[\u0300-\u036f]/g,""));
+        //Método repeat
+        console.log("METODO repeat");
+        console.log("Hola. ".repeat(2));
+        //Método replace
+        console.log("METODO replace");
+        console.log("Hola mundo".replace(" mundo", ""));
+        console.log("Palabra".replace(/a/ig, "0"));
+        //Método search
+        console.log("METODO search");
+        console.log("Hola mundo".search("mundo"));
+        //Método slice
+        console.log("METODO slice");
+        console.log("Hola mundo".slice(0, 4));
+        //Método split
+        console.log("METODO split");
+        console.log("Hola mundo".split(" "));
+        //Método startsWith
+        console.log("METODO startsWith");
+        console.log("Hola mundo".startsWith("mundo"));
+        console.log("Hola mundo".startsWith("mundo", 5));
+        //Método substr
+        console.log("METODO substr");
+        console.log("Hola mundo".substr(1,6));
+        //Método substring
+        console.log("METODO substring");
+        console.log("Hola mundo".substring(1,6));
+        //Método toLowerCase
+        console.log("Método toLowerCase");
+        console.log("Hola mundo".toLowerCase(""));
+        //Método toUpperCase
+        console.log("Método toUpperCase");
+        console.log("Hola mundo". toUpperCase(""));
+        //Método trim
+        console.log("Método trim");
+        console.log("Hola mundo ".trim());
+        console.log(" Hola mundo ".trim());
+
+        //CONVERSION DE STRINGS
+        console.log("parseInt y parseFloat");
+        console.log(parseInt("4"));
+        console.log(parseInt("hola"));
+        console.log(parseInt("21 calles"));
+        console.log(parseInt("1e3"));
+        console.log(parseFloat("1.52"));
+        console.log(parseFloat("1,5"));
+        console.log(String(new Date()));
+
+        //FORMATEADO DE STRINGS
+        //Formateado de cadenas
+       console.log("Literales de cadena"); 
+       console.log("''");
+       console.log('Esto es un literal de cadena');
+       console.log('""');
+       console.log("Esto es otro literal de cadena");
+       console.log("Secuencia escapada en hexadecimal");
+       console.log("\x41");
+       console.log("Secuencia escapada en Unicode");
+       console.log("\u0041");
+       console.log("Escapar texto, mediante el uso de puntos de escape");
+       console.log('\u{1F440}', "\uD83D\uDC40");
+       console.log("Literales de cadena multilínea (sólo con ES5.1 e inferiores)");
+       console.log('Nombre: Pablo\n\Apellidos: Fernández');
+       console.log("Literales de plantilla (sólo con ES6 y superiores)");
+       console.log(`Nombre: Pablo
+Apellidos: Fernández`);
+       //Escapar con variables
+       console.log("Escapar con variables");
+       var nombre = 'Pablo';
+       console.log('Nombre: ' + nombre + '\n\Apellidos: Fernández');
+       console.log("Escapar con variables con Syntactic Sugar");
+       var nombre = 'Pablo';
+       console.log(`Nombre: ${nombre}
+Apellidos: Fernández`);
+
+
+
+
+
+       
+
+
+    </script>
+</head>
+<body>
+    
+    
+</body>
+</html>

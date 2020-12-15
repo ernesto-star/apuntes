@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <!--<link rel='stylesheet' type='text/css' media='screen' href='main.css'>-->
+    <script>
+        //**************TIPO NUMBER**************
+        //El tipo Number se utiliza para el tratamiento de números enteros, decimales o exponenciales
+        //puede ser utilizado para realizar una conversión explícita.
+        console.log(Number("4"));
+        console.log(Number("Hola"));
+        console.log(Number("21 calles"));
+        console.log(Number(1e3));
+
+        //MÉTODOS
+        //METODO isFinite
+        console.log("METODO isFinite");
+        console.log("Sólo es efectivo cuando se utiliza en conversiones");
+        console.log(isFinite(200));
+        console.log(isFinite("hola"));
+        console.log(isFinite("200"));
+        //METODO isNaN
+        console.log("METODO isNaN");
+        console.log("Devuelve un booleano que indica si el valor proporcionado por parámetro es o no un valor numérico. Sólo es efectivo cuando se utiliza en conversiones.");
+        console.log(isNaN(200));
+        console.log(isNaN("hola"));
+        console.log(isNaN("200"));
+        //METODO toExponencial
+        console.log("toExponencial");
+        console.log("Devuelve el número proporcionado por parámetro en notación exponencial.");
+        console.log((2.1).toExponential(3));
+        //METODO toFixed
+        console.log("toFixed");
+        console.log("Devuelve el número en notación decimal con el número de decimales indicado por el parámetro");
+        console.log((2.1).toFixed(3));
+        //METODO toPrecision
+        console.log("toPrecision");
+        console.log("Devuelve el número en notación decimal para que coincida con la longitud proporcionada por el parámetro.");
+        console.log((2.1).toPrecision(4));
+        console.log((21.1).toPrecision(4));
+        console.log((0.21).toPrecision(4));
+        //METODO Método toString
+        console.log("toString");
+        console.log("Devuelve el número en formato String");
+        console.log((2.1).toString());
+        //Conversión de números
+        console.log("Conversión de números");
+        console.log("Devuelve el número en formato String");
+        console.log((2.0).toString());
+        console.log((2).toString());
+        //console.log(2.toString());
+        console.log(Number(new Date()));
+        //FORMATEADO DE NUMEROS
+        console.log("toLocaleString");
+        console.log("podemos formatear números y monedas de forma sencilla");
+        console.log((123456.123).toLocaleString());
+        //PROPIEDAD STYLE
+        console.log("style");
+        console.log("Es un String que indica el formato a presentar los datos");
+        console.log("Para indicar que se trata de valores porcentuales, establecidos en tanto por uno");
+        var options = {
+
+            style: "percent",
+
+            minimumFractionDigits: 2
+
+        };
+
+        console.log((0.52).toLocaleString("es-ES", options));
+
+
+        //PROPIEDAD CURRENCY
+        console.log("propiedad currency");
+        console.log("nos permitirá configurar qué moneda deseamos utilizar.");
+        //PROPIEDAD currencyDisplay
+        console.log("currencyDisplay");
+        var options = {
+
+            style: "currency",
+
+            currency: "USD",
+
+            currencyDisplay: "symbol",
+
+            minimumFractionDigits: 3
+
+        };
+        console.log((123.12).toLocaleString("es-ES", options));
+
+        //Propiedad useGrouping
+        console.log("Propiedad useGrouping");
+        console.log("Esta propiedad es un booleano que indica si se desea utilizar el separador de miles o no.");
+        console.log("por defecto true");
+        var options = {
+
+            style: "decimal",
+
+            useGrouping: false,
+
+            minimumFractionDigits: 2
+
+        };
+        console.log((12345.52).toLocaleString("es-ES", options));
+
+        var options = {
+
+            style: "decimal",
+
+            useGrouping: true,
+
+            minimumFractionDigits: 2
+
+        };
+        console.log((12345.52).toLocaleString("es-ES", options));
+
+        //Propiedad minimumFractionDigits
+        console.log("Propiedad minimumFractionDigits");
+        console.log("Esta propiedad es un valor entero que indica el número mínimo de dígitos que debe utilizarse en la parte decimal.");
+
+        var options = {
+
+            style: "decimal",
+
+            useGrouping: false,
+
+            minimumIntegerDigits: 5,
+
+            minimumFractionDigits: 6
+
+        };
+        console.log((5.0).toLocaleString("es-ES", options));
+
+        //Propiedad maximumFractionDigits
+        console.log("Propiedad maximumFractionDigits");
+        console.log("Esta propiedad es un valor entero que indica el número máximo de dígitos que debe utilizarse en la parte decimal.");
+        console.log("su valor por defecto es 3.");
+
+        var options = {
+
+         style: "decimal",
+
+         useGrouping: false,
+
+         minimumIntegerDigits: 3,
+
+         minimumFractionDigits: 2,
+
+         maximumFractionDigits: 2
+
+         };
+         console.log((5.009).toLocaleString("es-ES", options));
+
+         //OPERACIONES CON NUMEROS
+
+         console.log("operaciones con numeros");
+         //EL OBJETO MATH
+         //CONSTANTES
+         console.log("EL OBJETO MATH");
+         console.log("Math.E");
+         console.log("Devuelve el numero e");
+         console.log(Math.E);
+         console.log("Math.LN2");
+         console.log("Devuelve un valor aproximado al logaritmo neperiano de 2.");
+         console.log(Math.LN2);
+         console.log("Math.LN10");
+         console.log("Devuelve un valor aproximado del logaritmo neperiano de 10.");
+         console.log(Math.LN10);
+         console.log("Math.LOG2E");
+         console.log("Devuelve un valor aproximado del logaritmo en base 2 de la constante de Euler.");
+         console.log(Math.LOG2E);
+         console.log("Math.LOG10E");
+         console.log("Devuelve un valor aproximado del logaritmo en base 10 de la constante de Euler");
+         console.log(Math.LOG10E);
+         console.log("Math.PI");
+         console.log("Devuelve un valor aproximado de la constante de PI, relación existente entre la circunferencia de un círculo y su diámetro.");
+         console.log(Math.PI);
+         console.log("Math.SQRT1_2");
+         console.log("Devuelve un valor aproximado de la raíz cuadrada de um medio, es decir, de 1 sobre la raíz cuadrada de 2.");
+         console.log(Math.SQRT1_2);
+         console.log("Math.SQRT2");
+         console.log("Devuelve un valor aproximado de la raíz cuadrada de 2.");
+         console.log(Math.SQRT2);
+         console.log("Math.SQRT2");
+         console.log("Devuelve un valor aproximado de la raíz cuadrada de 2.");
+         console.log(Math.SQRT2);
+
+         //METODOS
+         console.log("Math.abs");
+         console.log("Devuelve el valor absoluto del valor indicado.");
+         console.log(Math.abs);
+         console.log("Math.acos");
+         console.log("Devuelve el arcocoseno del valor indicado.");
+         console.log(Math.acos('0.999'));
+         console.log("Math.acosh");
+         console.log("Devuelve el arcocoseno hiperbólico del valor indicado.");
+         console.log(Math.acosh('2'));
+         console.log("Math.asin");
+         console.log("Devuelve el arcoseno del valor indicado.");
+         console.log(Math.asin('0.999'));
+         console.log("Math.asinh");
+         console.log("Devuelve el arcoseno hiperbólico del valor indicado.");
+         console.log(Math.asinh('2'));
+         console.log("Math.atan");
+         console.log("Devuelve la arcotangente del valor indicado.");
+         console.log(Math.atan('0.999'));
+         console.log("Math.atanh");
+         console.log("Devuelve la arcotangente hiperbólica del valor indicado.");
+         console.log(Math.atanh('0.999'));
+         console.log("Math.cbrt");
+         console.log("Devuelve la raíz cúbica del valor indicado.");
+         console.log(Math.cbrt('27'));
+         console.log("Math.ceil");
+         console.log("Devuelve el valor entero más pequeño redondeando hacia arriba.");
+         console.log(Math.ceil('-1.99'));
+         console.log(Math.ceil('1.99'));
+         console.log("Math.cos");
+         console.log("Devuelve el coseno del valor indicado.");
+         console.log(Math.cos(0));
+         console.log("Math.cosh");
+         console.log("Devuelve el coseno hiperbólico del valor indicado.");
+         console.log(Math.cosh('1'));
+         console.log("Math.exp");
+         console.log("Devuelve la potencia de la constante de Euler elevado al valor indicado.");
+         console.log(Math.exp('1'));
+         console.log("Math.floor");
+         console.log("Devuelve el valor entero más grande redondeando hacia abajo.");
+         console.log(Math.floor('-1.99'));
+         console.log(Math.floor('1.99'));
+         console.log("math.log");
+         console.log("Devuelve el logaritmo neperiano del valor indicado.");
+         console.log(Math.log('0'));
+         console.log("math.log10");
+         console.log("Devuelve el logaritmo en base 10 del valor indicado.");
+         console.log(Math.log10('2'));
+         console.log("math.log2");
+         console.log("Devuelve el logaritmo en base 2 del valor indicado.");
+         console.log(Math.log2('2'));
+         console.log("math.max");
+         console.log("Devuelve el mayor valor de los valores indicados.");
+         console.log(Math.max(2, 3, 5, 8, -1, 6));
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
